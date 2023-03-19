@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+.entire_content {
+	display: inline;
+	width: 70%;
+	margin: 20px auto ;
+	background: rgba(0, 0, 0, 0.356);
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	max-height: 100vh;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: hsl(0, 41%, 78%);
+	background-image: url(background.jpg);
+	background-size: cover;
+
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: rgb(81, 255, 0);
+	margin-bottom: 1rem;
+	background: linear-gradient(to top right, #6600ff 56%, #0066ff00 100%);
+	text-align: center;
+	padding: 1rem ;
+	border-radius: 1.7rem;
+	font-family: 'Rubik Iso', cursive;
+}
+
+header h3{
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: rgb(234, 255, 0);
+	margin-bottom: 1rem;
+	background: linear-gradient(to top left, #ff0066 56%, #ffcc99 100%);
+	padding: 0.8rem;
+	border-radius: 1.3rem;
+	font-family: 'Fira Sans', sans-serif;
+	text-align: center;
+}
+
+#new-task-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: rgba(235, 172, 183, 0.801);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: blanchedalmond;
+	font-size: 1.25rem;
+	font-family: 'Righteous', cursive;
+}
+
+#new-task-input::placeholder {
+	color: rgba(137, 43, 226, 0.5);
+}
+
+#new-task-submit {
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.4s;
+	background-color: blue;
+	border-radius: 15px;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	/* background-color: rgba(0, 0, 0, 0.514); */
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	
+	font-size: 2rem;
+	font-weight: 300;
+	color: rgba(196, 53, 53, 0.887);
+	margin-bottom: 1rem;
+	text-align: center;
+	margin-top: -1rem;
+	font-family: 'Lilita One', cursive;
+	background-color: rgba(234, 255, 0, 0.75);
+	
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background: linear-gradient(to top right, #ffffff 26%, #ffffcc 96%);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: rgb(191, 94, 110);
+	font-size: 1.25rem;
+	font-family: 'Edu NSW ACT Foundation', cursive;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+	padding: -3.5rem;
+}
+
+.task .content .text:not(:read-only) {
+	color: rgb(177, 9, 37);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+	
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+
+
+.task .actions .delete .edit {
+	color: rgb(220, 20, 200);
+	font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.actions{
+	color: darkturquoise;
+}
